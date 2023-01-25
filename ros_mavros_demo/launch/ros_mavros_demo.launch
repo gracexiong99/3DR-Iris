@@ -1,0 +1,12 @@
+<!--
+ Copyright (c) 2022 hs293go
+ 
+ This software is released under the MIT License.
+ https://opensource.org/licenses/MIT
+-->
+
+<launch>
+  <node name="ros_mavros_demo" type="ros_mavros_demo.py" pkg="ros_mavros_demo" output="screen">
+    <rosparam command="load" file="$(find ros_mavros_demo)/config/path.json"/>
+  </node>
+</launch>
